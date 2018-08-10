@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_img_width" xsi:type="number">100</argument>
+                <argument name="logo_img_height" xsi:type="number">100</argument>
+                <argument name="logo_file" xsi:type="string">PME_TestModule::images/test.png</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="content">
+            <!--<container name="test.container" htmlTag="div" htmlClass="test-class" htmlId="abc">
+                <block class="Magento\Framework\View\Element\Template" name="my_abc"
+                       template="PME_TestModule::test.phtml" />
+            </container>-->
+
+
+
+        </referenceContainer>
+
+        <!--<referenceContainer name="footer-container">
+            <container name="test.container.footer" htmlTag="div" htmlClass="test-class">
+                <block class="Magento\Framework\View\Element\Template" name="my_abc.footer"
+                       template="PME_TestModule::test.phtml" />
+            </container>
+        </referenceContainer>-->
+    </body>
+
+
+
+</page>

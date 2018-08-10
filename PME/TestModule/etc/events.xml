@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <!--<event name="controller_action_predispatch">
+        <observer name="some_name" instance="PME\TestModule\Observer\Action\PreDispatch" />
+    </event>-->
+
+    <event name="pme_test_add_before">
+        <observer name="someobs" instance="PME\TestModule\Observer\AddContent" />
+    </event>
+
+    <event name="testTable_model_save_before">
+        <observer name="aaa" instance="PME\TestModule\Observer\BeforeSave" />
+    </event>
+
+</config>

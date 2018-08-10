@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <referenceContainer name="content">
+        <block class="PME\TestModule\Block\Test" name="test.block.index"
+               template="PME_TestModule::test/index.phtml" >
+              <block class="PME\TestModule\Block\Test" name="test.list"
+                     template="PME_TestModule::test/index/list.phtml" />
+              <block class="PME\TestModule\Block\Test" name="test.form"
+                     template="PME_TestModule::test/index/form.phtml" />
+        </block>
+    </referenceContainer>
+
+</page>

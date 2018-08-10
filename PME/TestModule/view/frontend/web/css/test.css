@@ -1,0 +1,30 @@
+.test-class {
+    /*background: red;
+    color: #fff;*/
+}
+
+header.page-header {
+    background: #0d8038;
+    color: #aa66cc;
+}
+
+.page-custom-wrapper {
+    margin: auto;
+    width: 85%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.page-custom-wrapper h2 {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.page-custom-wrapper .c_wrap_inner p {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}

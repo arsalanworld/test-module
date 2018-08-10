@@ -1,0 +1,20 @@
+<?php
+/**
+ * @var PME\TestModule\Block\Test $block
+ */
+?>
+<form action="<?php echo $block->getActionUrl(); ?>" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <label for="name"><?= __('%1 Name: ', 'Your') ?>
+            <input type="text" name="name" placeholder="Please enter your name"  id="name" value="" />
+        </label>
+        <div class="btn btn-group">
+            <button type="submit">
+                Submit Form
+            </button>
+            <button type="reset">
+                Reset Form
+            </button>
+        </div>
+    </fieldset>
+</form>

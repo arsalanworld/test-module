@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <referenceContainer name="test.container" >
+        <referenceBlock name="my_abc">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">PME_TestModule::test2.phtml</argument>
+            </action>
+        </referenceBlock>
+        <block class="Magento\Cms\Block\Block" name="mycustm_men-block" after="-">
+            <arguments>
+                <argument name="block_id" xsi:type="string">men-block</argument>
+            </arguments>
+        </block>
+        <block class="Magento\Cms\Block\Block" name="mycustm_new-block" before="mycustm_men-block">
+            <arguments>
+                <argument name="block_id" xsi:type="string">new-block</argument>
+            </arguments>
+        </block>
+        <block class="Magento\Cms\Block\Block" name="mycustm_cms" before="my_abc">
+            <arguments>
+                <argument name="block_id" xsi:type="string">my_custom_block</argument>
+            </arguments>
+        </block>
+
+    </referenceContainer>
+
+</page>

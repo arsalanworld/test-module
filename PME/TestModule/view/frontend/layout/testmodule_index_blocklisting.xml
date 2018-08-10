@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-right"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <!--<referenceContainer name="header.container">
+        <container name="test.container2" htmlTag="div" htmlClass="test-class">
+            <block class="Magento\Framework\View\Element\Template" name="my_abc2"
+                   template="PME_TestModule::test.phtml" befoer="-" />
+        </container>
+    </referenceContainer>-->
+
+    <!--<referenceContainer name="test.container" >
+        <referenceBlock name="my_abc">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">PME_TestModule::test2.phtml</argument>
+            </action>
+        </referenceBlock>
+    </referenceContainer>-->
+    <body>
+        <referenceContainer name="content">
+            <container name="page.custom.wrapper" htmlTag="div" htmlClass="page-custom-wrapper">
+                <container name="custom.wrap.inner" htmlTag="div" htmlClass="c_wrap_inner" before="-" >
+                    <block  class="Magento\Cms\Block\Block" name="custom.wrap.inner.block" as="custom_block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">c_wrap_next</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <container name="custom.wrap.text" htmlTag="section" htmlId="c_wrap_text" >
+                    <block class="Magento\Cms\Block\Block" name="custom.wrap.text.block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">my_custom_block</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

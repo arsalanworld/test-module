@@ -1,0 +1,39 @@
+@import 'variable/_colors.less';
+
+header {
+    &.page-header {
+        background: @pme__header_bg_color;
+        color: @pme__header_text_color;
+    }
+
+}
+
+.page {
+    &-custom {
+        &-wrapper {
+            margin: auto;
+            width: 85%;
+            padding: 15px;
+            border: 1px solid @pme__border_color;
+            border-radius: 8px;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            h2 {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid @pme__h2_border_color;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            .c_wrap_inner {
+                p {
+                    text-align: center;
+                    width: 85%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

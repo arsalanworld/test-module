@@ -1,0 +1,36 @@
+<?php
+/**
+ * @var PME\TestModule\Block\Test $block
+ */
+?>
+<?php
+    $_collection = $block->getList();
+?>
+<?php
+    echo $block->getChildHtml('test.list');
+?>
+<div class="rec">
+    <?php if ($_collection->count()): ?>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <?php foreach ($_collection as $item): ?>
+                <tr>
+                    <td><?= $item->getEntityId(); ?></td>
+                    <td><?= $item->getName(); ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php else: ?>
+        <p>
+            <em><?= __('There  are noe Records'); ?></em>
+        </p>
+    <?php endif; ?>
+</div>
